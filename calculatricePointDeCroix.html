@@ -13,9 +13,9 @@
         <form>
             <p>
                 <label for="nombrePL">Nombre de points du motif : En largeur</label> 
-                <input type="text" id="nombrePointsL" /> 
+                <input type="text" id="nombrePointsL" onblur="verifLargeur(this)"  /> 
                 <label for="nombrePH">En hauteur</label> 
-                <input type="text" id="nombrePointsH" />
+                <input type="text" id="nombrePointsH" onblur="verifHauteur(this)" />
             </p>
 
             <p>
