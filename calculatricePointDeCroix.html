@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <title>Calculatrice pour la quantité de toile au point de croix</title>
+        
+    </head>
+
+    <body>
+
+        <form>
+            <p>
+                <label for="nombrePL">Nombre de points du motif : En largeur</label> 
+                <input type="text" id="nombrePointsL" /> 
+                <label for="nombrePH">En hauteur</label> 
+                <input type="text" id="nombrePointsH" />
+            </p>
+
+            <p>
+                <label for="toile">Nom de la toile :</label> 
+                <select name="toile" id="choixToile">
+                <option value="Aïda">Aïda</option>
+                <option value="Etamine">Etamine</option>
+                <option value="Gaz De Soie">Gaz de soie</option>
+                <option value="Lin">Lin</option>
+                </select> 
+            
+                <label for="brodeFils" id="brode">Brodé en</label> 
+                <select name="brodeFils" id="brodeFils">
+                <option value="1">1</option>
+                <option value="2" selected="selected">2</option>
+                </select> 
+                <label>fil(s)</label>
+            </p>
+
+            <p>
+                <label for="nombrePoints">Nombre de points au cm de la toile :</label>
+                <select id="nombrePoints">
+                <option value="3.25">3.25</option>
+                <option value="4.35">4.35</option>
+                <option value="5.5">5.5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                </select>
+            </p>
+
+        </form>
+        
+        <button id="calculer" type="submit">Calculer</button>
+    
+        <div id="resultat">Résultat :</div>
+
+       <script type="text/javascript" src="calcul.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
